@@ -24,7 +24,7 @@
 #
 
 # ===========================================================================
-# (c) Copyright IBM Corp. 2020, 2020 All Rights Reserved
+# (c) Copyright IBM Corp. 2020, 2026 All Rights Reserved
 # ===========================================================================
 
 # Test if $1 is a valid argument to $3 (often is $JAVA passed as $3)
@@ -35,7 +35,7 @@ AC_DEFUN([ADD_JVM_ARG_IF_OK],
   $ECHO "Check if jvm arg is ok: $1" >&AS_MESSAGE_LOG_FD
   $ECHO "Command: $3 $1 -version" >&AS_MESSAGE_LOG_FD
   OUTPUT=`$3 $1 -version 2>&1`
-  FOUND_WARN=`$ECHO "$OUTPUT" | grep -i warn`
+  FOUND_WARN=`$ECHO "$OUTPUT" | $GREP -i "warn\|unrecognised"`
   FOUND_VERSION=`$ECHO $OUTPUT | grep " version \""`
   if test "x$FOUND_VERSION" != x && test "x$FOUND_WARN" = x; then
     $2="[$]$2 $1"
