@@ -1,6 +1,6 @@
 #!/bin/bash
 # ===========================================================================
-# (c) Copyright IBM Corp. 2017, 2025 All Rights Reserved
+# (c) Copyright IBM Corp. 2017, 2026 All Rights Reserved
 # ===========================================================================
 # This code is free software; you can redistribute it and/or modify it
 # under the terms of the GNU General Public License version 2 only, as
@@ -121,9 +121,6 @@ usage() {
 		show_option "-$key-reference"  "a local repository to use as a reference"  "${source_ref[$key]}"
 	done
 
-	show_option "-gskit-bin"         "the GSKit binary URL"
-	show_option "-gskit-sdk-bin"     "the GSKIT SDK binary URL"
-	show_option "-gskit-credential"  "the credential for downloading the GSKit and GSKit SDK"
 	show_option "--openssl-repo"     "equivalent to -openssl-repo"
 	show_option "--openssl-version"  "specify the version of OpenSSL source to download"
 	show_option "-parallel"          "(ignored)"
