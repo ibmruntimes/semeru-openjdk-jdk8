@@ -1,5 +1,5 @@
 # ===========================================================================
-# (c) Copyright IBM Corp. 2022, 2023 All Rights Reserved
+# (c) Copyright IBM Corp. 2022, 2026 All Rights Reserved
 # ===========================================================================
 # This code is free software; you can redistribute it and/or modify it
 # under the terms of the GNU General Public License version 2 only, as
@@ -128,6 +128,7 @@ javax/net/ssl/TLSv12/ShortRSAKey512.java                            https://gith
 javax/net/ssl/TLSv12/ShortRSAKeyGCM.java                            https://github.com/ibmruntimes/openj9-openjdk-jdk8/issues/611   linux-x64,linux-ppc64le,linux-s390x
 javax/net/ssl/TLSv12/SignatureAlgorithms.java                       https://github.com/ibmruntimes/openj9-openjdk-jdk8/issues/611   linux-x64,linux-ppc64le,linux-s390x
 javax/net/ssl/TLSv12/TLSEnginesClosureTest.java                     https://github.com/ibmruntimes/openj9-openjdk-jdk8/issues/611   linux-x64,linux-ppc64le,linux-s390x
+sun/rmi/runtime/Log/6409194/NoConsoleOutput.java                    https://github.com/eclipse-openj9/openj9/issues/23655           linux-ppc64le,linux-s390x,linux-x64
 sun/security/pkcs11/rsa/TestKeyFactory.java                         https://github.com/ibmruntimes/openj9-openjdk-jdk8/issues/611   linux-x64,linux-ppc64le,linux-s390x
 sun/security/pkcs11/rsa/TestSignatures.java                         https://github.com/ibmruntimes/openj9-openjdk-jdk8/issues/611   linux-x64,linux-ppc64le,linux-s390x
 sun/security/provider/KeyStore/CaseSensitiveAliases.java            https://github.com/ibmruntimes/openj9-openjdk-jdk8/issues/611   linux-x64,linux-ppc64le,linux-s390x
